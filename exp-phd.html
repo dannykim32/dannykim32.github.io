@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Danny Kim - Home</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="exp-phd.html">Ph.D Information</a>
+                    </li>
+                    <li>
+                        <a href="exp-eng.html">Engineering Experience</a>
+                    </li>
+                    <li>
+                        <a href="exp-vol.html">Volunteer Experience</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Ph.D. Experience
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Ph.D. Experience</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Papers and Posters
+                </h1>
+            </div>
+            <div class="col-md-12">
+                <ul>
+                    <li> <a href="https://doi.org/10.1007/978-3-319-60876-1_5">DynODet: Detecting Dynamic Obfuscation in Malware</a>, Detection of Instrusions and Malware & Vulnerability Assessment (DIMVA) 2017, Paper</li>
+                </ul>
+                <ul>
+                    <li> Annual Scholar Award Presentation, ARCS Foundation 2017, Poster Presentation</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Ph.D Tools</h2>
+            </div>
+            <div class="col-md-8">
+                <p>My thesis focuses on discovering fundamental behavioral differences between malware and benign software. My work primarily involves dynamic analysis, which is when the program is executed in a protected environment. I use a dynamic binary instrumentation tool to discover behavior that most current dynamic tools cannot. Most dynamic tools today analyze malware using OS-level behavior, but with a DBI tool, I can analyze instruction-level behavior. Instruction-level behavior is more specific than OS-level indicators, which often results in a higher accuracy of detection. I initially focused on a class of behavior called obfuscation, in which malware tries to hide from detection tools. I found quantifiable differences between obfuscation occur in malware and benign software, allowing me to build a tool to detect the difference. I have expanded on this work and am working on a general malware detection tool using a combination of dynamic analysis and machine learning.</p>
+                <ul>
+                    <li>Researching an innovative method using static and dynamic program analysis to aid malicious software detection.</li>
+                    <li>Developing behavioral analysis tools with binary rewriters such as DynamoRio and Pin in C++ to obtain instruction-level behavior into a program's execution.</li>
+                    <li>Enhancing existing dynamic malware detection schemes that rely solely on OS-level features by augmenting analysis with program-level behavior.</li>
+                    <li>Analyzing the differences in obfuscation and binary protection schemes present in malware versus benign software.</li>
+                    <li>Implementing just-in-time disassembly to get a limited, but accurate projection of a program's execution.</li>
+                    <li>Creating dynamic signatures that can detect malicious behavior without any prior knowledge.</li>
+                    <li>Using Cuckoo Sandbox as the dynamic analysis scheduler and virtual-machine manager.</li>
+                    <li>Building a machine-learning malware detection tool with SciKit and TensorFlow that is able to correctly detect more than 98% of all programs as benign or malicious.</li>
+                    <li>Investigating methods of obtaining a unique dataset, such as using the import address table hash, for reproducible testing for dynamic malware analysis with machine learning.</li>
+                    <li>Using advanced debugging tools such as IdaPro and OllyDbg to obtain instruction-level intuition on a program's behavior.</li>
+                    <li>Rebuilding control-flow graphs of obfuscated malware to ensure control-flow integrity.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="img-responsive" src="images/cuckoo.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="img-responsive" src="images/code.jpg" alt="">
+            </div>
+            
+            <div class="col-md-4 col-sm-4">
+                <img class="img-responsive" src="images/machinelearning.jpg" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Danny Kim 2017</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- handlebars -->
+    <script src="js/handlebars-v4.0.10.js"></script>
+
+    <!-- my_handlebars -->
+    <script src="js/my_handlebars.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/handlebars.json" type="text/x-handlebars-template"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
